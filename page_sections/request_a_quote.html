@@ -27,4 +27,67 @@
             Request A Quote or more information!
             
         </p>
+
+        <!--Form section collecting user information-->
+        <form action="user_results.html" method="get">
+            <div class="First">
+                <label for="fName">First Name (Primer Nombre):</label>
+                <input name="fName" id="fName" type="text" placeholder="Name/Nombre" required>
+            </div>
+
+            <div class="lName">
+                <label for="lName">Last Name (Apellido):</label>
+                <input name="lName" id="lName" type="text" placeholder="Name/Nombre" required>
+            </div>
+
+            <div class="email">
+                <label for="email">E-mail (Correo Electrónico):</label>
+                <input name="email" id="email" type="email" placeholder="Optional/Opcional">
+            </div>
+
+            <div class="phone">
+                <label for="phone">Contact Number (Número de Teléfono):</label>
+                <input name="phone" id="phone" type="tel" placeholder="Number/Número" required>
+            </div>
+
+            <div class="zipcode">
+                <label for="zipcode">Zip Code (Código Postal):</label>
+                <input name="zipcode" id="zipcode" type="tel" placeholder="Number/Número" required>
+            </div>
+
+            <p class="checkboxes">Type of work or project:</p>
+            <div class="checkboxes">
+                <label for="stucco">Stucco/Siding finish (Instalación de estuco/revestimiento)</label>
+                <input type="checkbox" name="stucco" id="stucco"/><br>
+
+                <label for="kitchenBathroom">Kitchen or Bathroom Remodeling (Remodelacion de cocinas o baños)</label>
+                <input type="checkbox" name="kitchenBathroom" id="kitchenBathroom"/><br>
+
+                <label for="painting">Painting (Trabajo de Pintura)</label>
+                <input type="checkbox" name="painting" id="painting"/><br>
+
+                <label for="flooring">Flooring (Trabajo de pisos)</label>
+                <input type="checkbox" name="flooring" id="flooring"/><br>
+
+                <label for="window">Window Installation (Instalación de ventanas)</label>
+                <input type="checkbox" name="window" id="window"/><br>
+
+                <label for="commercial">commercial (Comercial)</label>
+                <input type="checkbox" name="comments" id="commercial"/><br>
+
+                <label for="other">Other (Algo más)</label>
+                <input type="checkbox" name="other" id="other"/><br>
+            </div>
+
+            <div class="jobDetails">
+                <label for="jobDetails">Additional Details (Información Adicional):</label>
+                <textarea name="comments" id="comments" 
+                placeholder="Enter any additional details on the type of work or project. (Ingrese cualquier detalle adicional sobre el tipo de trabajo o proyecto.)" required></textarea>
+            </div>
+
+            <button type="reset">Clear information</button>
+            <button type="submit">Submit</button>
+            
+
+        </form>
     </body>
